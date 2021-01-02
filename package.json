@@ -1,5 +1,5 @@
 {
-  "name": "extended-validations",
+  "name": "@beniiinemszam/extended-validations",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -41,5 +41,20 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beniiinemszam/extended-validations.git"
+  },
+  "keywords": [
+    "validation"
+  ],
+  "author": "beniiinemszam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beniiinemszam/extended-validations/issues"
+  },
+  "homepage": "https://github.com/beniiinemszam/extended-validations#readme"
 }
