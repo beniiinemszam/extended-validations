@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "extendedvalidations": {
+      "projectType": "library",
+      "root": "projects/extendedvalidations",
+      "sourceRoot": "projects/extendedvalidations/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/extendedvalidations/tsconfig.lib.json",
+            "project": "projects/extendedvalidations/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/extendedvalidations/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/extendedvalidations/src/test.ts",
+            "tsConfig": "projects/extendedvalidations/tsconfig.spec.json",
+            "karmaConfig": "projects/extendedvalidations/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/extendedvalidations/tsconfig.lib.json",
+              "projects/extendedvalidations/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "extendedvalidations"
 }
